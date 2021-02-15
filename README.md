@@ -6,6 +6,7 @@
 
 ## Установка
 git clone https://github.com/Yarulik/benewake_ce30c_ros_melodic.git
+
 папку benewake_ce30c поместить или скопировать в "рабочую директория" ROS (например в catkin_ws/src)
 
 
@@ -14,6 +15,7 @@ git clone https://github.com/Yarulik/benewake_ce30c_ros_melodic.git
 
 #### Если при catkin_make выйдет ошибка драйвера:
 /usr/bin/ld: skipping incompatible /home/nvidia/Загрузки/SDK/CE30-C_ROS/libbw_ce30v2.0.so when searching for -lbw_ce30v2.0
+
 #### то нужно на откомпилировать этот файл, перейдя в директорию 
 cd ~/benewake_ce30c_ros_melodic/benewake_ce30c_sdk_linux/sources и сделать make 
 После чего перенести или заменить файл libbw_ce30v2.0.so на новый в catkin_ws/src/benewake_c30c 

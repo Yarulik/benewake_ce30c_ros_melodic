@@ -1,17 +1,20 @@
 # benewake_ce30c_ros_melodic
  
 ## Инструкция по запуску лидара на ROS Melodic
-На других не тестировал, но на Raspbian Buster привер из CE30_sdk_test, работал
+На других ROS не тестировал, но на Raspbian Buster пример из CE30_sdk_test, работал
 
-#### ROS Melodic уже должен быть установлен
-в ~/.bashrc должно быть прописан localhost name и т.д.
+## Установка
+git clone https://github.com/Yarulik/benewake_ce30c_ros_melodic.git
 
+
+#### в ~/.bashrc должно быть прописан localhost, MASTER URI
 
 #### Если при catkin_make выйдет ошибка драйвера:
 /usr/bin/ld: skipping incompatible /home/nvidia/Загрузки/SDK/CE30-C_ROS/libbw_ce30v2.0.so when searching for -lbw_ce30v2.0
 #### то нужно на откомпилировать этот файл, перейдя в директорию 
 cd ~/benewake_ce30c_ros_melodic/benewake_ce30c_sdk_linux/sources и сделать make 
-в catkin_ws/src/benewake_c30c libbw_ce30v2.0.so заменяем на новый
+После чего перенести или заменить файл libbw_ce30v2.0.so на новый в catkin_ws/src/benewake_c30c 
+
 #### теперь пробуем снова 
 catlin_make
 
@@ -20,5 +23,5 @@ catlin_make
 sensor_msgs, std_msgs и д.р., об этом сообщит компилятор
 
 ##### По умолчанию адресс лидара 192.168.1.80
-Заходим в настройку сетевой карты и прописываем DHCP вручную, ipv4: 192.168.1.2 маска 255.255.255.0, сохраняем и подключаем.
+Заходим в настройку сетевой карты и прописываем DHCP вручную, ipv4: 192.168.1.2 (ниже 192.168.1.80) маска 255.255.255.0, сохраняем и подключаем лидар.
 

@@ -1,7 +1,7 @@
 # benewake_ce30c_ros_melodic
 ![Image alt](https://github.com/Yarulik/benewake_ce30c_ros_melodic/blob/main/CE30c.PNG)
 
-## Инструкция по запуску лидара на ROS Melodic
+> ## Инструкция по запуску лидара на ROS Melodic
 На других ROS не тестировал, но на Raspbian Buster пример из CE30_sdk_test, работал
 
 ## Установка

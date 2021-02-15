@@ -1,5 +1,6 @@
 # benewake_ce30c_ros_melodic
- 
+![Image alt](https://github.com/Yarulik/benewake_ce30c_ros_melodic/blob/main/CE30c.PNG)
+
 ## Инструкция по запуску лидара на ROS Melodic
 На других ROS не тестировал, но на Raspbian Buster пример из CE30_sdk_test, работал
 
@@ -8,7 +9,7 @@ git clone https://github.com/Yarulik/benewake_ce30c_ros_melodic.git
 
 
 #### в ~/.bashrc должно быть прописан localhost, MASTER URI
-https://github.com/Yarulik/benewake_ce30c_ros_melodic/blob/main/CE30c.PNG
+
 
 #### Если при catkin_make выйдет ошибка драйвера:
 /usr/bin/ld: skipping incompatible /home/nvidia/Загрузки/SDK/CE30-C_ROS/libbw_ce30v2.0.so when searching for -lbw_ce30v2.0
